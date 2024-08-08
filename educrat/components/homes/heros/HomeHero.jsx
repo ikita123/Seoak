@@ -106,7 +106,7 @@ const HomeHero = () => {
           <div className="col-xl-6 col-lg-11" data-aos="fade-up" data-aos-delay="500">
             <div className="masthead__content">
               <h1 className="masthead__title text-white mb-50 mt--1300 ml-90">
-                <p className="text-50" style={{ fontWeight: "lighter" }}>REACH YOUR CAREER</p>
+                <p className="text-33" >REACH YOUR CAREER</p>
                 LEARN FROM BIGGEST ONLINE LEARNING SOURCE
               </h1>
               <div className="masthead__button d-flex items-center mt-50 ml-90 text-30 ml-20 md:d-none">
@@ -124,8 +124,8 @@ const HomeHero = () => {
         <div className="y-gap-133">
             <Image src={Modern_Education} alt="image" width={"100%"} height={"100%"} />
           </div>
-          <div className="masthead__overlay_info -type-7 js-mouse-move-container">
-            <div className="container">
+          <div className="masthead__overlay_info -type-7">
+            <div className="container" style={{    boxShadow: "0px 1px 43px rgba(20, 3, 66, 0.2)", borderRadius: "16px"}}>
               <div className="row y-gap-20 justify-between items-center">
                 <div className="col-xl-12 col-lg-11" data-aos="fade-up" data-aos-delay="500">
                   <div className="masthead__content">
@@ -210,6 +210,8 @@ const HomeHero = () => {
             transform: translateY(273px);
           }
           .masthead__overlay_info {
+            color: black;
+            font-size: medium;
             position: absolute;
             width: -webkit-fill-available;
             // margin-top: -222px;

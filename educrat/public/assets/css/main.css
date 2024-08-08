@@ -75,6 +75,7 @@
   --text-20: 20px;
   --text-24: 24px;
   --text-30: 30px;
+  --text-33: 33px;
   --text-35: 35px;
   --text-40: 40px;
   --text-45: 45px;
@@ -3141,6 +3142,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--text-50) !important;
 }
 
+.text-33 {
+  font-size: var(--text-33) !important;
+  font-weight: 100
+}
+
 .text-55 {
   font-size: var(--text-55) !important;
 }
@@ -5212,7 +5218,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead.-type-1 .masthead__title {
-  font-size: 55px;
+  font-size: 53px;
   line-height: 80px;
   font-weight: 700;
   color: white;
