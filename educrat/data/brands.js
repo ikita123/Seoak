@@ -1,8 +1,6 @@
 export const brands = [
-  "/assets/img/clients/1.svg",
-  "/assets/img/clients/2.svg",
-  "/assets/img/clients/3.svg",
-  "/assets/img/clients/4.svg",
-  "/assets/img/clients/5.svg",
-  "/assets/img/clients/6.svg",
+  "/assets/img/clients/MSME_LOGO.png",
+  "/assets/img/clients/ISO_Logo.png",
+  "/assets/img/clients/Startup_India_Logo.png",
+  "/assets/img/clients/AICTE_Logo.png",
 ];
