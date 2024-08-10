@@ -122,69 +122,69 @@ const HomeHero = () => {
         </div>
 
         <div className="y-gap-133">
-            <Image src={Modern_Education} alt="image" width={"100%"} height={"100%"} />
-          </div>
-          <div className="masthead__overlay_info -type-7">
-            <div className="container" style={{    boxShadow: "0px 1px 43px rgba(20, 3, 66, 0.2)", borderRadius: "16px"}}>
-              <div className="row y-gap-20 justify-between items-center">
-                <div className="col-xl-12 col-lg-11" data-aos="fade-up" data-aos-delay="500">
-                  <div className="masthead__content">
-                    <div>
-                      <div className="masthead-form bg-white rounded-16 mt-30 px-10 py-10">
-                        <form className=" d-flex x-gap-30 y-gap-10 items-center flex-wrap">
+          <Image src={Modern_Education} alt="image" width={"100%"} height={"100%"} />
+        </div>
+        <div className="masthead__overlay_info -type-7">
+          <div className="container" style={{ boxShadow: "0px 1px 43px rgba(20, 3, 66, 0.2)", borderRadius: "16px" }}>
+            <div className="row y-gap-20 justify-between items-center">
+              <div className="col-xl-12 col-lg-11" data-aos="fade-up" data-aos-delay="500">
+                <div className="masthead__content">
+                  <div>
+                    <div className="masthead-form bg-white rounded-16 mt-30 px-10 py-10">
+                      <form className=" d-flex x-gap-30 y-gap-10 items-center flex-wrap">
 
-                          <div className="masthead-form__item">
-                            <div className="d-flex items-center justify-center text-black -dark-text-black">
-                              <div className="d-flex items-center">
-                                <span>Our Hiring Partners</span>
-                              </div>
-                            </div>
-
-                            <div className="enrolled-title">
-                              100+
+                        <div className="masthead-form__item">
+                          <div className="d-flex items-center justify-center text-black -dark-text-black">
+                            <div className="d-flex items-center">
+                              <span>Our Hiring Partners</span>
                             </div>
                           </div>
 
+                          <div className="enrolled-title">
+                            100+
+                          </div>
+                        </div>
 
-                          <div className="masthead-form__item">
-                            <div className="d-flex items-center justify-center text-black -dark-text-black">
-                              <div className="d-flex items-center">
-                                <span>Sucess Rate</span>
-                              </div>
-                            </div>
 
-                            <div className="enrolled-title">
-                              95.8%
+                        <div className="masthead-form__item">
+                          <div className="d-flex items-center justify-center text-black -dark-text-black">
+                            <div className="d-flex items-center">
+                              <span>Sucess Rate</span>
                             </div>
                           </div>
 
+                          <div className="enrolled-title">
+                            95.8%
+                          </div>
+                        </div>
 
-                          <div className="masthead-form__item">
-                            <div className="d-flex items-center justify-center text-black -dark-text-black">
-                              <div className="d-flex items-center">
-                                <span>Industry Experts</span>
-                              </div>
-                            </div>
 
-                            <div className="enrolled-title">
-                              50+
+                        <div className="masthead-form__item">
+                          <div className="d-flex items-center justify-center text-black -dark-text-black">
+                            <div className="d-flex items-center">
+                              <span>Industry Experts</span>
                             </div>
                           </div>
 
-                          <div className="masthead-form__item">
-                            <div className="d-flex items-center justify-center text-black -dark-text-black">
-                              <div className="d-flex items-center">
-                                <span>Students Enrolled</span>
-                              </div>
-                            </div>
+                          <div className="enrolled-title">
+                            50+
+                          </div>
+                        </div>
 
-                            <div className="enrolled-title">
-                              10K+
+                        <div className="masthead-form__item">
+                          <div className="d-flex items-center justify-center text-black -dark-text-black">
+                            <div className="d-flex items-center">
+                              <span>Students Enrolled</span>
                             </div>
                           </div>
 
+                          <div className="enrolled-title">
+                            10K+
+                          </div>
+                        </div>
 
-                          {/* <div className="masthead-form__button">
+
+                        {/* <div className="masthead-form__button">
                             <button
                               onClick={() => router.push("/courses-list-2")}
                               className="button -dark-1 text-white -dark-button-dark-1"
@@ -192,14 +192,14 @@ const HomeHero = () => {
                               Search
                             </button>
                           </div> */}
-                        </form>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         <style jsx>{`
           .masthead__overlay {
             position: relative;
@@ -223,6 +223,7 @@ const HomeHero = () => {
         {/* animated shape start */}
         {/* <ShapeRendering /> */}
         {/* animated shape end */}
+
       </section>
     </>
   );
