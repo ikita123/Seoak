@@ -1,4 +1,5 @@
 "use client";
+import Star from "../../common/Star";
 
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,39 +13,37 @@ export default function EventsOne() {
     setShowSlider(true);
   }, []);
   return (
-    <section className="layout-pt-lg layout-pb-lg bg-light-3">
-      <div className="container">
-        <div className="row y-gap-15 justify-between items-end">
+    <section className="layout-pt-lg ml-50 mt-20 layout-pb-lg">
+       <div className="row y-gap-15 justify-between items-end">
           <div className="col-lg-6">
-            <div className="sectionTitle ">
-              <h2 className="sectionTitle__title ">Upcoming Events</h2>
-
-              <p className="sectionTitle__text ">
-                Lorem ipsum dolor sit amet, consectetur.
-              </p>
+            <div className="sectionTitle">
+              <span className="sectionTitle__title ml-35 mr-20 text-20 text-black fw-100">
+                SEOAK BASICS COURSES
+              </span>
+              <div className="badge_square px-15 py-8 text-11 bg-blue-5 text-white fw-400">
+                4-8 WEEKS
+              </div>
             </div>
-          </div>
-
-          <div className="col-auto">
-            <div className="d-flex justify-center x-gap-15 items-center">
-              <div className="col-auto">
-                <button className="d-flex items-center text-24 arrow-left-hover js-events-slider-prev event-slide-prev">
-                  <i className="icon  icon-arrow-left"></i>
-                </button>
-              </div>
-              <div className="col-auto">
-                <div className="pagination event-pagination -arrows js-events-slider-pagination"></div>
-              </div>
-              <div className="col-auto">
-                <button className="d-flex items-center text-24 arrow-right-hover js-events-slider-next event-slide-next">
-                  <i className="icon icon-arrow-right"></i>
-                </button>
+            <div className="sectionTitle" style={{width: "max-content;"}}>
+              <div className="badge_square mr-15 ml-10 px-5 py-8 text-11 bg-blue-5 text-white fw-400" style={{height: "25px;"}}> </div>
+              <span className="sectionTitle__title mr-10 text-black fw-400" style={{fontSize: "xxx-large;", fontFamily: "'Poppins', sans-serif"}}>
+                Launch your <span className="about-content__title" style={{fontSize: "xxx-large;"}}> Career Journey Right Here, Right Now</span>
+              </span>
+            </div>
+            <div className="sectionTitle mt-20" style={{width: "max-content;"}}>
+              <div className="mr-15 ml-10 px-5 py-8 text-30 text-black fw-400"> </div>
+                  <i className="icon-check text-20 text-black mr-20"><span className="ml-10 mr-50">Study on your own time</span></i>
+                  <i className="icon-check text-20 text-black mr-20"><span className="ml-10 mr-50">Practical Learning</span></i>
+                  <i className="icon-check text-20 text-black"><span className="ml-10 mr-50">Industry Recognised certificate</span></i>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="pt-60 lg:pt-40 js-section-slider">
+      <div className="container mt-30">
+        <span className="sectionTitle__title ml--240 mr-10 --text-20 text-black fw-100">
+          Categories
+        </span>
+        <div className="lg:pt-40 js-section-slider">
+          <div>
           {showSlider && (
             <Swiper
               className="overflow-visible"
@@ -96,7 +95,15 @@ export default function EventsOne() {
                       <div className="eventCard__bg bg-white">
                         <div className="eventCard__content y-gap-10">
                           <div className="eventCard__inner">
-                            <h4 className="eventCard__title text-17 fw-500">
+                            <div className="d-flex items-center text-white">
+                              <div className="text-14 lh-1 text-yellow-4 mr-10">
+                                {4.2}
+                              </div>
+                              <div className="d-flex x-gap-10 items-center">
+                                <Star star={4.2} textColor={"text-yellow-4"} />
+                              </div>
+                            </div>
+                            <h4 className="eventCard__title text-17 text-black">
                               <Link
                                 className="linkCustom"
                                 href={`/events/${elm.id}`}
@@ -104,45 +111,47 @@ export default function EventsOne() {
                                 {elm.title}
                               </Link>
                             </h4>
-                            <div className="d-flex x-gap-15 pt-10">
-                              <div className="d-flex items-center">
-                                <div className="icon-calendar-2 text-16 mr-8"></div>
-                                <div className="text-14">{elm.date}</div>
+                            <div className="d-flex x-gap-15 pt-10 text-black">
+                              <div className="d-flex items-center ml-5 mr-70">
+                                <div className="text-14">{"15 lesson"}</div>
+                              </div>
+                              <div className="d-flex items-center mr-70">
+                                <div className="text-14">{"6h 33m"}</div>
                               </div>
                               <div className="d-flex items-center">
-                                <div className="icon-location text-16 mr-8"></div>
-                                <div className="text-14">{elm.location}</div>
+                                <div className="text-14">{"Intermediate"}</div>
                               </div>
                             </div>
                           </div>
 
-                          <div className="eventCard__button">
+                          
+                        </div>
+                        <div className="eventCard__button text-24 mt-10 ">
                             <Link
                               href={`/events/${elm.id}`}
-                              className="button -sm -rounded -purple-1 text-white px-25"
+                              className="button -rounded bg-blue-5 text-white px-25 fw-800"
                             >
-                              Buy
+                              Know More
                             </Link>
                           </div>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-          )}
+          )}</div>
         </div>
 
-        <div className="row pt-60 lg:pt-40">
+        <div className="row justify-between items-end" style={{marginRight: "calc(var(--bs-gutter-x) * -8.5);"}}>
+          <div className="col-lg-6">
+          </div>
           <div className="col-auto">
-            <Link
-              href="/event-list-1"
-              className="button -icon -outline-purple-1 text-purple-1 fw-500"
-            >
-              View All Events
-              <span className="icon-arrow-top-right text-14 ml-10"></span>
-            </Link>
+            <div className="d-flex justify-center items-center">
+              <div className="col-auto">
+                <div className="pagination event-pagination -arrows js-events-slider-pagination"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

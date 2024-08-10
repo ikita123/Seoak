@@ -5,6 +5,7 @@ import '../public/assets/sass/styles.scss'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import 'react-calendar/dist/Calendar.css';
+
 config.autoAddCss = false
 
 import AOS from "aos";
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className=''>
       <head>
-      
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet"></link>
       </head>
       <body  >
         <Context> {children}</Context>
