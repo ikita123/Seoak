@@ -14,7 +14,7 @@ import Instructors from "../components/common/Instructors";
 import GetApp from "../components/homes/getApp/GetApp";
 import Blog from "../components/homes/blogs/Blog";
 import Join from "../components/homes/join/Join";
-import FooterOne from "../components/layout/footers/FooterOne";
+import FooterOne from "../components/layout/footers/FooterTwo";
 import Preloader from "@/components/common/Preloader";
 
 export const metadata = {
