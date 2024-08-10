@@ -14,30 +14,30 @@ export default function EventsOne() {
   }, []);
   return (
     <section className="layout-pt-lg ml-50 mt-20 layout-pb-lg">
-       <div className="row y-gap-15 justify-between items-end">
-          <div className="col-lg-6">
-            <div className="sectionTitle">
-              <span className="sectionTitle__title ml-35 mr-20 text-20 text-black fw-100">
-                SEOAK BASICS COURSES
-              </span>
-              <div className="badge_square px-15 py-8 text-11 bg-blue-5 text-white fw-400">
-                4-8 WEEKS
-              </div>
-            </div>
-            <div className="sectionTitle" style={{width: "max-content;"}}>
-              <div className="badge_square mr-15 ml-10 px-5 py-8 text-11 bg-blue-5 text-white fw-400" style={{height: "25px;"}}> </div>
-              <span className="sectionTitle__title mr-10 text-black fw-400" style={{fontSize: "xxx-large;", fontFamily: "'Poppins', sans-serif"}}>
-                Launch your <span className="about-content__title" style={{fontSize: "xxx-large;"}}> Career Journey Right Here, Right Now</span>
-              </span>
-            </div>
-            <div className="sectionTitle mt-20" style={{width: "max-content;"}}>
-              <div className="mr-15 ml-10 px-5 py-8 text-30 text-black fw-400"> </div>
-                  <i className="icon-check text-20 text-black mr-20"><span className="ml-10 mr-50">Study on your own time</span></i>
-                  <i className="icon-check text-20 text-black mr-20"><span className="ml-10 mr-50">Practical Learning</span></i>
-                  <i className="icon-check text-20 text-black"><span className="ml-10 mr-50">Industry Recognised certificate</span></i>
-              </div>
+      <div className="row y-gap-15 justify-between items-end">
+        <div className="col-lg-6">
+          <div className="sectionTitle">
+            <span className="sectionTitle__title ml-35 mr-20 text-20 text-black fw-100">
+              SEOAK BASICS COURSES
+            </span>
+            <div className="badge_square px-15 py-8 text-11 bg-blue-5 text-white fw-400">
+              4-8 WEEKS
             </div>
           </div>
+          <div className="sectionTitle" style={{width: "max-content;"}}>
+            <div className="badge_square mr-15 ml-10 px-5 py-8 text-11 bg-blue-5 text-white fw-400" style={{height: "25px;"}}> </div>
+            <span className="sectionTitle__title mr-10 text-black fw-400" style={{fontSize: "xxx-large;", fontFamily: "'Poppins', sans-serif"}}>
+              Launch your <span className="about-content__title" style={{fontSize: "xxx-large;"}}> Career Journey Right Here, Right Now</span>
+            </span>
+          </div>
+          <div className="sectionTitle mt-20" style={{width: "max-content;"}}>
+            <div className="mr-15 ml-10 px-5 py-8 text-30 text-black fw-400"> </div>
+              <i className="icon-check text-20 text-black mr-20"><span className="ml-10 mr-50">Study on your own time</span></i>
+              <i className="icon-check text-20 text-black mr-20"><span className="ml-10 mr-50">Practical Learning</span></i>
+              <i className="icon-check text-20 text-black"><span className="ml-10 mr-50">Industry Recognised certificate</span></i>
+          </div>
+        </div>
+      </div>
       <div className="container mt-30">
         <span className="sectionTitle__title ml--240 mr-10 --text-20 text-black fw-100">
           Categories
@@ -127,13 +127,13 @@ export default function EventsOne() {
                           
                         </div>
                         <div className="eventCard__button text-24 mt-10 ">
-                            <Link
-                              href={`/events/${elm.id}`}
-                              className="button -rounded bg-blue-5 text-white px-25 fw-800"
-                            >
-                              Know More
-                            </Link>
-                          </div>
+                          <Link
+                            href={`/events/${elm.id}`}
+                            className="button -rounded bg-blue-5 text-white px-25 fw-800"
+                          >
+                            Know More
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@ export default function EventsOne() {
           )}</div>
         </div>
 
-        <div className="row justify-between items-end" style={{marginRight: "calc(var(--bs-gutter-x) * -8.5);"}}>
+        <div className="row justify-between mt-50 items-end" style={{marginRight: "calc(var(--bs-gutter-x) * -8.5);"}}>
           <div className="col-lg-6">
           </div>
           <div className="col-auto">

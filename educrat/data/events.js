@@ -43,18 +43,19 @@ export const events = [
     price: 450,
     preDiscount: 650,
   },
-  {
-    id: 5,
-    imgSrc: "/assets/img/courses-list/Advanced-AI-course-cover.png",
-    title: "Advanced AI course",
-    date: "6 April, 2022",
-    location: "London, UK",
-    desc: `Educational technology and mobile learning`,
-    category: "Photo & Film",
-    price: 450,
-    preDiscount: 650,
-  },
 ];
+
+// {
+//   id: 5,
+//   imgSrc: "/assets/img/courses-list/Advanced-AI-course-cover.png",
+//   title: "Advanced AI course",
+//   date: "6 April, 2022",
+//   location: "London, UK",
+//   desc: `Educational technology and mobile learning`,
+//   category: "Photo & Film",
+//   price: 450,
+//   preDiscount: 650,
+// },
 
 export const categories = [
   "All Categories",
