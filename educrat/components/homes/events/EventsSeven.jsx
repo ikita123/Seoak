@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function EventsSeven() {
   return (
-    <section className="layout-pt-lg layout-pb-lg bg-light-6">
+    <section className="layout-pt-lg layout-pb-lg bg-ligh-blue">
       <div className="container">
         <div className="row y-gap-20 justify-center items-center">
           <div className="col-lg-6">
