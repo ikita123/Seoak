@@ -42,7 +42,6 @@ const Brands = ({ backgroundColorComponent, brandsTwo }) => {
           <div className="row justify-center">
             <div className="col text-center">
               <p className="text-30 mt-60 text-black">Get a job at over 2,000 top product and service-based companies globally</p>
-              <p className="text-30 mt-60 text-black">(Company Logos should scroll on)</p>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function FooterOne() {
                     <Image
                       width={140}
                       height={50}
-                      src="/assets/img/general/logo-white.png"
+                      src="/assets/img/general/Seoak-logo-White.png"
                       alt="logo"
                     />          </div>
                 </div>
