@@ -8,9 +8,11 @@ import Brands from "../components/common/Brands";
 import Categories from "../components/homes/categories/Categories";
 import Courses from "../components/homes/courses/FeaturedCourses";
 import EventsOne from '../components/homes/events/EventsOne';
+// import TestimonialsOne from "../components/common/Testimonials";
 import TestimonialsOne from "../components/common/Testimonials";
-import TestimonialsOne from "../components/common/TestimonialsOne";
 import Pricing from '../components/homes/pricing/Pricing'
+import PricingCommon from '../components/common/Pricing'
+
 import FeaturesOne from "../components/homes/features/FeaturesOne";
 import WhyCourse from "../components/homes/WhyCourse";
 import Instructors from "../components/common/Instructors";
@@ -19,6 +21,7 @@ import Blog from "../components/homes/blogs/Blog";
 import Join from "../components/homes/join/Join";
 import FooterOne from "../components/layout/footers/FooterOne";
 import Preloader from "@/components/common/Preloader";
+import LearningPath from "@/components/homes/LearningPath/LearningPath";
 
 export const metadata = {
   title: 'SEOAK',
@@ -42,10 +45,12 @@ export default function HomePage() {
       {/* <Courses/> */}
       <EventsOne/>
       <Pricing/>
+      <PricingCommon/>
       <TestimonialsOne/>
+      <LearningPath/>
       {/* <FeaturesOne/>
       <WhyCourse/>
-      <Instructors/>
+      // <Instructors/>
       <GetApp/>
       <Blog/>
       <Join/> */}
