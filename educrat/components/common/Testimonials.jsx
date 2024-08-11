@@ -76,6 +76,15 @@ export default function Testimonials({ backgroundComponent }) {
                           data-aos-duration={600}
                         >
 
+                          <div className="testimonials__icon text-left">
+                            <Image
+                              width={60}
+                              height={43}
+                              src="/assets/img/misc/quote.svg"
+                              alt="quote"
+                            />
+                          </div>
+
                           <div className="testimonials__text md:text-20 fw-500 text-black">
                             {elm.text}
                           </div>

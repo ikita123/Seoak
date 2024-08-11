@@ -88,7 +88,7 @@ export default function Pricing() {
                   alt="clients image"
                   width={320}
                   height={90}
-                  style={{ position: "absolute", marginTop: "-200px", marginLeft: "420px"}}
+                  style={{ position: "absolute", marginTop: "-209px", marginLeft: "400px"}}
                 />
               </div>
               <div className="hidden" style={{
