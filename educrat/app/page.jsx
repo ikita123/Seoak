@@ -5,6 +5,7 @@ import  Header  from "../components/layout/headers/HeaderThree";
 import HomeHero from "../components/homes/heros/HomeHero";
 
 import Brands from "../components/common/Brands";
+import Alumni from "../components/common/Alumni";
 import Categories from "../components/homes/categories/Categories";
 import Courses from "../components/homes/courses/FeaturedCourses";
 import EventsOne from '../components/homes/events/EventsOne';
@@ -42,12 +43,13 @@ export default function HomePage() {
       <HomeHero />
       <Brands/>
       {/* <Categories /> */}
-      {/* <Courses/> */}
+      
       <EventsOne/>
       <Pricing/>
+      <Alumni/>
       <PricingCommon/>
-      <TestimonialsOne/>
-      <LearningPath/>
+      {/* <TestimonialsOne/>
+      <LearningPath/> */}
       {/* <FeaturesOne/>
       <WhyCourse/>
       // <Instructors/>

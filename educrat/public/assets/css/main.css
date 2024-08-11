@@ -10078,6 +10078,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 16px !important;
 }
 
+.rounded-50 {
+  border-radius: 50px !important;
+}
+
 .rounded-200 {
   border-radius: 200px !important;
 }
@@ -10976,6 +10980,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -355px !important
 }
 
+.mt--200 {
+  margin-top: -200px !important
+}
+.ml-330 {
+  margin-left: 400px !important
+}
+
 .mb-10 {
   margin-bottom: 10px !important;
 }
@@ -11502,6 +11513,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .mb-90 {
   margin-bottom: 90px !important;
+}
+
+.mb-130 {
+  margin-bottom: 130px !important;
 }
 
 .ml-90 {
@@ -12082,6 +12097,9 @@ h1, h2, h3, h4, h5, h6 {
   .xl\:mb-90 {
     margin-bottom: 90px !important;
   }
+  .xl\:mb-130 {
+    margin-bottom: 130px !important;
+  }
   .xl\:ml-90 {
     margin-left: 90px !important;
   }
@@ -12656,6 +12674,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .lg\:mb-90 {
     margin-bottom: 90px !important;
+  }
+  .lg\:mb-130 {
+    margin-bottom: 130px !important;
   }
   .lg\:ml-90 {
     margin-left: 90px !important;
@@ -13232,6 +13253,9 @@ h1, h2, h3, h4, h5, h6 {
   .md\:mb-90 {
     margin-bottom: 90px !important;
   }
+  .md\:mb-130 {
+    margin-bottom: 130px !important;
+  }
   .md\:ml-90 {
     margin-left: 90px !important;
   }
@@ -13806,6 +13830,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .sm\:mb-90 {
     margin-bottom: 90px !important;
+  }
+  .sm\:mb-130 {
+    margin-bottom: 130px !important;
   }
   .sm\:ml-90 {
     margin-left: 90px !important;
@@ -15290,6 +15317,20 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #311F61;
 }
 
+.box-1-bg-color {
+  background-color: #CB6CE6;
+}
+.box-2-bg-color {
+  background-color: #FFBD59;
+}
+.box-3-bg-color {
+  background-color: #00BF63;
+}
+.box-4-bg-color {
+  background-color: #004AAD;
+}
+
+
 .invoice-wrapper {
   min-height: 100vh;
 }
@@ -16162,4 +16203,20 @@ table.table td {
   margin-top: calc(var(--bs-gutter-y) * -1) !important;
   margin-right: calc(var(--bs-gutter-x) * -0.5);
   margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.box_recognised {
+  --bs-gutter-x: 100px;
+  --bs-gutter-y: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1) !important;
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+
+.box-stroke {
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
 }

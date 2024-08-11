@@ -37,14 +37,7 @@ export default function About() {
                     alt="image"
                   />
                 </div>
-                <div className="-el-2">
-                  <Image
-                    width={200}
-                    height={200}
-                    src="/assets/img/about-1/2.png"
-                    alt="image"
-                  />
-                </div>
+                
                 <div className="-el-3">
                   <Image
                     width={255}
