@@ -36,9 +36,7 @@ export default function Testimonials({ backgroundComponent }) {
   return (
     <section className="layout-pt-lg layout-pb-lg section-bg">
       <div
-        className={`section-bg__item  ${
-          backgroundComponent ? "bg-white-two" : "bg-light-6"
-        }`}
+        className={`section-bg__item`}
       ></div>
 
       <div className="container">
