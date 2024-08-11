@@ -8,7 +8,7 @@ import Brands from "../components/common/Brands";
 import Categories from "../components/homes/categories/Categories";
 import Courses from "../components/homes/courses/FeaturedCourses";
 import EventsOne from '../components/homes/events/EventsOne';
-import TestimonialsOne from "../components/common/TestimonialsOne";
+import TestimonialsOne from "../components/common/Testimonials";
 import FeaturesOne from "../components/homes/features/FeaturesOne";
 import WhyCourse from "../components/homes/WhyCourse";
 import Instructors from "../components/common/Instructors";
