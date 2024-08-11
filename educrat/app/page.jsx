@@ -54,6 +54,7 @@ export default function HomePage() {
       <GetApp/>
       <Blog/>
       <Join/> */}
+      {/* <Blog/> */}
       <FooterOne/>
       
       
