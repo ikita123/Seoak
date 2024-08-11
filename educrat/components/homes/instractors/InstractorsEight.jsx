@@ -18,28 +18,19 @@ export default function InstractorsEight() {
     <section className="layout-pt-lg layout-pb-lg">
       <div className="container">
         <div className="row y-gap-50">
-          <div className="col-xl-3 col-lg-4 col-md-8">
-            <div className="sectionTitle ">
-              <h2 className="sectionTitle__title ">
-                Learn from the best instructors
-              </h2>
-
-              <p className="sectionTitle__text ">
-                Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
-                elit. Felis donec massa aliquam id dolor.
-              </p>
-            </div>
-
-            <div className="d-inline-block">
-              <Link
-                href="/instructors-list-1"
-                className="button -icon -red-2 text-orange-1 mt-30"
-              >
-                View All Instructors
-                <i className="icon-arrow-top-right text-13 ml-10"></i>
-              </Link>
+          <div className="row justify-left text-left">
+            <div className="col-auto">
+              <div className="sectionTitle">
+                <span className="sectionTitle__title text-center mr-10 text-black fw-400" style={{fontSize: "xxx-large;", fontFamily: "'Poppins', sans-serif"}}>
+                  Meet your
+                  <span className="about-content__title" style={{fontSize: "xxx-large;"}}> Super-Skilled Educators</span>
+                </span>
+                
+              </div>
+              <span className="text-black text-24">"Our exceptional instructors bring decades of expertise from leading firms"</span>
             </div>
           </div>
+
 
           <div className="offset-xl-1 col-lg-8">
             <div className="overflow-hidden js-section-slider">
@@ -89,10 +80,10 @@ export default function InstractorsEight() {
                               alt="image"
                             />
                           </div>
-                          <div className="d-flex items-center mt-20">
+                          {/* <div className="d-flex items-center mt-20">
                             <div className="icon-star text-9 text-yellow-1 mr-5"></div>
                             <div className="text-yellow-1">{elm.rating}</div>
-                          </div>
+                          </div> */}
                           <h5 className="text-17 fw-500 mt-10">
                             <Link
                               className="linkCustom"
@@ -103,8 +94,17 @@ export default function InstractorsEight() {
                           </h5>
                           <p className="mt-5">{elm.role}</p>
 
-                          <div className="d-flex x-gap-15 items-center pt-5">
-                            <div className="d-flex items-center">
+                          <div className="d-flex x-gap-15 items-center">
+                            <div className="text-13 ml--10 mt--35 text-left pl-30 pr-10 text-black fw-600" style={{
+            display: (elm.id != 48 && elm.id != 65)  ? 'block' : 'none'}}>
+                              <Image
+                                width={150}
+                                height={150}
+                                src={elm.company_image}
+                                alt="image"
+                              />
+                            </div>
+                            {/* <div className="d-flex items-center">
                               <div className="mr-10">
                                 <Image
                                   width={16}
@@ -130,7 +130,7 @@ export default function InstractorsEight() {
                               <div className="text-13 lh-1">
                                 {elm.courses} Course
                               </div>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>

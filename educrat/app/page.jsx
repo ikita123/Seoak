@@ -15,6 +15,7 @@ import EventsEight from '../components/homes/events/EventsEight';
 import TestimonialsOne from "../components/common/Testimonials";
 import Pricing from '../components/homes/pricing/Pricing'
 import PricingCommon from '../components/common/Pricing'
+import InstractorsEight from '@/components/homes/instractors/InstractorsEight'
 
 import FeaturesOne from "../components/homes/features/FeaturesOne";
 import WhyCourse from "../components/homes/WhyCourse";
@@ -50,8 +51,9 @@ export default function HomePage() {
       <Pricing/>
       <Alumni/>
       <PricingCommon/>
-      {/* <TestimonialsOne/> */}
+      <TestimonialsOne/>
       <LearningPath/>
+      <InstractorsEight/>
       <EventsEight/>
       {/* <FeaturesOne/>
       <WhyCourse/>
