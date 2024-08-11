@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { pricingData } from "../../../data/pricing";
 import Link from "next/link";
+import Image from "next/image";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 export default function Pricing() {
@@ -11,9 +13,33 @@ export default function Pricing() {
     setIsYearly(event.target.checked);
   };
   return (
-    <section className="layout-pt-lg layout-pb-lg bg-light-3">
-      <div className="container">
-        <div className="row justify-center text-center">
+    <section className="layout-pt-lg ml-50 layout-pb-lg">
+      <div className="row y-gap-15 justify-between items-end">
+        <div className="col-lg-6">
+          <div className="sectionTitle">
+            <span className="sectionTitle__title ml-35 mr-20 text-20 text-black fw-100">
+              INDUSTRIAL TRAINING PROGRAMS
+            </span>
+            <div className="badge_square px-15 py-8 text-11 bg-blue-5 text-white fw-400">
+              3-4 Months
+            </div>
+          </div>
+          <div className="sectionTitle" style={{width: "max-content;"}}>
+            <div className="badge_square mr-15 ml-10 px-5 py-8 text-11 bg-blue-5 text-white fw-400" style={{height: "25px;"}}> </div>
+            <span className="sectionTitle__title mr-10 text-black fw-400" style={{fontSize: "xxx-large;", fontFamily: "'Poppins', sans-serif"}}>
+              Organised Way to Start your <span className="about-content__title" style={{fontSize: "xxx-large;"}}>Career path</span>
+            </span>
+          </div>
+          <div className="sectionTitle mt-20" style={{width: "max-content;"}}>
+            <div className="mr-15 ml-10 px-5 py-8 text-30 text-black fw-400"> </div>
+              <i className="icon-check text-20 text-black mr-10"><span className="ml-10 mr-50">Guaranteed Placement Assistance</span></i>
+              <i className="icon-check text-20 text-black mr-10"><span className="ml-10 mr-50">Get 100% Scholarship</span></i>
+              <i className="icon-check text-20 text-black"><span className="ml-10 mr-50">Become Job ready</span></i>
+          </div>
+        </div>
+      </div>
+      <div className="container mr-150">
+        {/* <div className="row justify-center text-center">
           <div className="col-auto">
             <div className="sectionTitle ">
               <h2 className="sectionTitle__title ">Simple Pricing</h2>
@@ -40,177 +66,160 @@ export default function Pricing() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="row y-gap-30 justify-between pt-60 lg:pt-50">
-          <div className="col-lg-4 col-md-6">
+        <div className="row y-gap-30 pt-60 lg:pt-50">
+          <div className="col-lg-4 col-md-6 bg-light-7 ml--200 mr-90">
             <div
-              className="priceCard -type-1 rounded-16 overflow-hidden"
+              className="priceCard -type-1 overflow-hidden"
               data-aos="fade-right"
               data-aos-duration={500}
             >
-              <div className="priceCard__header py-40 pl-50 bg-dark-2">
-                <div className="priceCard__type text-18 lh-11 fw-500 text-white">
-                  {pricingData[0].type}
-                </div>
-                <div className="priceCard__price text-45 lh-11 fw-700 text-white mt-8">
-                  {pricingData[0].price ? pricingData[0].price : "Free"}
-                </div>
-                <div className="priceCard__period text-white mt-5">
-                  {pricingData[0].period}
-                </div>
+              <div>
+                <Image
+                  width={730}
+                  height={530}
+                  src={pricingData[0].imgSrc}
+                  alt="image"
+                />
               </div>
 
-              <div className="priceCard__content pt-30 pr-90 pb-50 pl-50 bg-white">
-                <div className="priceCard__text">
-                  Standard listing submission, active for 30 dayss
+              <div className="priceCard__content pt-30 pl-10 pr-10  pb-50 bg-light-7 mr-25">
+                <h4 className="text-24 text-center pl-50 text-black fw-600">
+                {pricingData[0].title}
+                </h4>
+                <p className="text-17 mt-20 text-center pl-30 pr-10 text-black fw-400">
+                  {pricingData[0].desc}
+                </p>
+                <div className="text-13 mt-20 text-left pl-30 pr-10 text-black fw-600">
+                  Instructors are from
+                  
                 </div>
-
-                <div className="priceCard__list mt-30">
-                  {pricingData[0].features.map((elm, i) => (
-                    <div key={i}>
-                      <span
-                        className=" pr-8 text-purple-1"
-                        style={{
-                          
-                          fontSize: "12px",
-                          fontWeight: "300",
-                        }}
-                        aria-hidden="true"
-                      >
-                        <FontAwesomeIcon icon={faCheck} />
-
-                      </span>
-                      {elm}
-                    </div>
-                  ))}
+                <div className="text-13 ml--10 mt--20 text-left pl-30 pr-10 text-black fw-600">
+                  <Image
+                    width={150}
+                    height={150}
+                    src="/assets/img/courses-list/Instructors_from.png"
+                    alt="image"
+                  />
                 </div>
-
-                <div className="priceCard__button mt-30">
+                <div className="text-13 ml--10 mt--80 text-right pl-30 pr-10 text-black">
+                  <div className="line-through text-black text-20">₹{"24,999"}</div>
+                  <div className="text-black text-24 fw-600">₹{"20,000"}</div>
+                </div>
+              </div>
+              
+              <div className="priceCard__button mt-10 ">
                   <Link
-                    className="button -md -purple-3 text-purple-1"
+                    className="button -half_rounded -md bg-blue-5 text-24 text-white fw-800"
                     href="/courses-list-1"
                   >
-                    Get Started Now
+                    Enroll Now
                   </Link>
                 </div>
-              </div>
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6">
-            <div
-              className="priceCard -type-1 rounded-16 overflow-hidden"
+          <div className="col-lg-4 col-md-6 bg-light-7 mr-90">
+          <div
+              className="priceCard -type-1 overflow-hidden"
               data-aos="fade-right"
-              data-aos-duration={1000}
+              data-aos-duration={500}
             >
-              <div className="priceCard__header py-40 pl-50 bg-purple-1">
-                <div className="priceCard__type text-18 lh-11 fw-500 text-white">
-                  {pricingData[1].type}
-                </div>
-                <div className="priceCard__price text-45 lh-11 fw-700 text-white mt-8">
-                  $
-                  {isYearly
-                    ? (pricingData[1].price * 12 * 0.7).toFixed(2)
-                    : pricingData[1].price}
-                </div>
-                <div className="priceCard__period text-white mt-5">
-                  {isYearly ? "per year" : pricingData[1].period}
-                </div>
+              <div>
+                <Image
+                  width={730}
+                  height={530}
+                  src={pricingData[1].imgSrc}
+                  alt="image"
+                />
+               
               </div>
 
-              <div className="priceCard__content pt-30 pr-90 pb-50 pl-50 bg-purple-1">
-                <div className="priceCard__text text-white">
-                  Standard listing submission, active for 30 dayss
+              <div className="priceCard__content pt-30 pb-50 bg-light-7 mr-25">
+                <h4 className="text-24 text-center pl-50 text-black fw-600">
+                {pricingData[1].title}
+                </h4>
+                <p className="text-17 mt-20 text-center pl-30 pr-10 text-black fw-400">
+                  {pricingData[1].desc}
+                </p>
+                <div className="text-13 mt-20 text-left pl-30 pr-10 text-black fw-600">
+                  Instructors are from
+                  
                 </div>
-
-                <div className="priceCard__list mt-30">
-                  {pricingData[1].features.map((elm, i) => (
-                    <div key={i} className="text-white">
-                     <span
-                        className=" pr-8  text-white"
-                        style={{
-                          
-                          fontSize: "12px",
-                          fontWeight: "300",
-                        }}
-                        aria-hidden="true"
-                      >
-                        <FontAwesomeIcon icon={faCheck} />
-
-                      </span>
-                      {elm}
-                    </div>
-                  ))}
+                <div className="text-13 ml--10 mt--20 text-left pl-30 pr-10 text-black fw-600">
+                  <Image
+                    width={150}
+                    height={150}
+                    src="/assets/img/courses-list/Instructors_from.png"
+                    alt="image"
+                  />
                 </div>
-
-                <div className="priceCard__button mt-30">
+                <div className="text-13 ml--10 mt--80 text-right pl-30 pr-10 text-black">
+                  <div className="line-through text-black text-20">₹{"24,999"}</div>
+                  <div className="text-black text-24 fw-600">₹{"20,000"}</div>
+                </div>
+              </div>
+              
+              <div className="priceCard__button mt-10 ">
                   <Link
-                    className="button -md -white text-purple-1"
+                    className="button -half_rounded -md bg-blue-5 text-24 text-white fw-800"
                     href="/courses-list-1"
                   >
-                    Get Started Now
+                    Enroll Now
                   </Link>
                 </div>
-              </div>
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6">
-            <div
-              className="priceCard -type-1 rounded-16 overflow-hidden"
+          <div className="col-lg-4 col-md-6 bg-light-7">
+          <div
+              className="priceCard -type-1 overflow-hidden"
               data-aos="fade-right"
-              data-aos-duration={1500}
+              data-aos-duration={500}
             >
-              <div className="priceCard__header py-40 pl-50 bg-dark-2">
-                <div className="priceCard__type text-18 lh-11 fw-500 text-white">
-                  {pricingData[2].type}
-                </div>
-                <div className="priceCard__price text-45 lh-11 fw-700 text-white mt-8">
-                  $
-                  {isYearly
-                    ? (pricingData[2].price * 12 * 0.7).toFixed(2)
-                    : pricingData[2].price}
-                </div>
-                <div className="priceCard__period text-white mt-5">
-                  {isYearly ? "per year" : pricingData[2].period}
-                </div>
+              <div>
+                <Image
+                  width={730}
+                  height={530}
+                  src={pricingData[2].imgSrc}
+                  alt="image"
+                />
               </div>
 
-              <div className="priceCard__content pt-30 pr-90 pb-50 pl-50 bg-white">
-                <div className="priceCard__text">
-                  Standard listing submission, active for 30 dayss
+              <div className="priceCard__content pt-30 pl-10 pr-10  pb-50 bg-light-7 mr-25">
+                <h4 className="text-24 text-center pl-50 text-black fw-600">
+                {pricingData[2].title}
+                </h4>
+                <p className="text-17 mt-20 text-center pl-30 pr-10 text-black fw-400">
+                  {pricingData[2].desc}
+                </p>
+                <div className="text-13 mt-20 text-left pl-30 pr-10 text-black fw-600">
+                  Instructors are from
+                  
                 </div>
-
-                <div className="priceCard__list mt-30">
-                  {pricingData[2].features.map((elm, i) => (
-                    <div key={i}>
-                     <span
-                        className="pr-8  text-purple-1"
-                        style={{
-                          
-                          fontSize: "12px",
-                          fontWeight: "300",
-                        }}
-                        aria-hidden="true"
-                      >
-                        <FontAwesomeIcon icon={faCheck} />
-
-                      </span>
-                      {elm}
-                    </div>
-                  ))}
+                <div className="text-13 ml--10 mt--20 text-left pl-30 pr-10 text-black fw-600">
+                  <Image
+                    width={150}
+                    height={150}
+                    src="/assets/img/courses-list/Instructors_from.png"
+                    alt="image"
+                  />
                 </div>
-
-                <div className="priceCard__button mt-30">
+                <div className="text-13 ml--10 mt--80 text-right pl-30 pr-10 text-black">
+                  <div className="line-through text-black text-20">₹{"24,999"}</div>
+                  <div className="text-black text-24 fw-600">₹{"20,000"}</div>
+                </div>
+              </div>
+              
+              <div className="priceCard__button mt-10 ">
                   <Link
-                    className="button -md -purple-3 text-purple-1"
+                    className="button -half_rounded -md bg-blue-5 text-24 text-white fw-800"
                     href="/courses-list-1"
                   >
-                    Get Started Now
+                    Enroll Now
                   </Link>
                 </div>
-              </div>
             </div>
           </div>
         </div>
