@@ -30,7 +30,7 @@ export default function EventsSeven() {
                     width={510}
                     height={340}
                     className="img-ratio"
-                    src={elm.imgSrc}
+                    src={"/assets/img/home-1/hero/blog.png"}
                     alt="image"
                   />
                 </div>
@@ -44,7 +44,7 @@ export default function EventsSeven() {
                   <h4 className="text-17 text-black lh-15 fw-500">
                     {elm.desc}
                   </h4>
-                  <h4 className="text-17 lh-15 fw-500 text-readmore">
+                  <h4 className="text-17 lh-15 fw-500 text-readmore underline">
                     <Link className="linkCustom" href={`/events/${elm.id}`}>
                       {"Read More"}
                     </Link>
