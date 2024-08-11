@@ -151,7 +151,7 @@
   --color-error-2: #AB3331;
   --color-success-1: #DEF2D7;
   --color-success-2: #5B7052;
-  --white:#fff
+  --color-readmore: #FF0000;
 }
 
 [data-anim-wrap] {
@@ -2637,21 +2637,37 @@ button:focus {
   border: 2px solid var(--color-success-2);
 }
 
+.button.-readmore {
+  background-color: var(--color-success-2);
+  border: 2px solid var(--color-success-2);
+}
+
 .button.-success-2:hover {
   background-color: transparent !important;
   color: var(--color-success-2) !important;
 }
 
+.button.-success-2:hover {
+  background-color: transparent !important;
+  color: var(--color-readmore) !important;
+}
+
 .button.-outline-success-2 {
   border: 2px solid var(--color-success-2);
 }
-
+.button.-outline-success-2 {
+  border: 2px solid var(--color-readmore);
+}
 .button.-outline-success-2:hover {
   background-color: var(--color-success-2);
   border-color: transparent;
   color: white !important;
 }
-
+.button.-outline-success-2:hover {
+  background-color: var(--color-readmore);
+  border-color: transparent;
+  color: white !important;
+}
 .button.-white-20 {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -9611,7 +9627,9 @@ h1, h2, h3, h4, h5, h6 {
 .bg-success-2 {
   background-color: var(--color-success-2);
 }
-
+.bg-success-2 {
+  background-color: var(--color-readmore);
+}
 .text-white {
   color: var(--color-white) !important;
 }
@@ -9870,6 +9888,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-success-2 {
   color: var(--color-success-2) !important;
+}
+.text-readmore {
+  color: var(--color-readmore) !important;
 }
 
 @media (max-width: 767px) {

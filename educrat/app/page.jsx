@@ -16,12 +16,13 @@ import TestimonialsOne from "../components/common/Testimonials";
 import Pricing from '../components/homes/pricing/Pricing'
 import PricingCommon from '../components/common/Pricing'
 import InstractorsEight from '@/components/homes/instractors/InstractorsEight'
+import EventsSeven from '@/components/homes/events/EventsSeven'
 
 import FeaturesOne from "../components/homes/features/FeaturesOne";
 import WhyCourse from "../components/homes/WhyCourse";
 import Instructors from "../components/common/Instructors";
 import GetApp from "../components/homes/getApp/GetApp";
-import Blog from "../components/homes/blogs/Blog";
+import Blog from "../components/homes/blogs/BlogsTwo";
 import Join from "../components/homes/join/Join";
 import FooterOne from "../components/layout/footers/FooterOne";
 import Preloader from "@/components/common/Preloader";
@@ -54,6 +55,7 @@ export default function HomePage() {
       <TestimonialsOne/>
       <LearningPath/>
       <InstractorsEight/>
+      <EventsSeven />
       <EventsEight/>
       {/* <FeaturesOne/>
       <WhyCourse/>

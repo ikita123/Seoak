@@ -110,13 +110,13 @@ export default function Pricing() {
               </div>
               
               <div className="priceCard__button mt-10 ">
-                  <Link
-                    className="button -half_rounded -md bg-blue-5 text-24 text-white fw-800"
-                    href="/courses-list-1"
-                  >
-                    Enroll Now
-                  </Link>
-                </div>
+                <Link
+                  className="button -half_rounded -md bg-blue-5 text-24 text-white fw-800"
+                  href="/courses-list-1"
+                >
+                  Enroll Now
+                </Link>
+              </div>
             </div>
           </div>
 
