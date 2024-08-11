@@ -48,43 +48,45 @@ export const testimonials = [
 export const testimonialsTwo = [
   {
     id: 1,
-    author: "Ali Tufan",
-    position: "Product Manager, Apple Inc",
-    text: "It is no exaggeration to say this Educrat experience was transformative–both professionally and personally. This workshop will long remain a high point of my life.",
+    author: "Likith Sai",
+    position: "System Administrator",
+    text: "Best Experience After Completing my graduation, I choose a career in full stack, being from the non- technical background this is quite new. But joining in a course from SEOAK! Has been my best decision. Highly Recommended for everyone.",
   },
   {
     id: 2,
-    author: "John Smith",
-    position: "Marketing Director, XYZ Company",
-    text: "Educrat has helped me acquire valuable skills that have greatly enhanced my career prospects. The courses are comprehensive and taught by industry experts.",
+    author: "Rushika",
+    position: "SR College",
+    text: "Good Experience I Pleasantly Surprised how SEOAK! Has helped my career, Their hands on teaching and industry focused lessons have made feel well prepared for real world challenges and more confident",
   },
   {
     id: 3,
-    author: "Emily Johnson",
-    position: "Freelance Graphic Designer",
-    text: "I've been using Educrat for several months now, and I'm impressed by the quality of the courses. They cover a wide range of topics and are easy to follow.",
+    author: "Sai",
+    position: "Data Scientist",
+    text: "Best Platform to learn “Joining SEOAK is an honor, offering abundant chances for personal development and evoking deep appreciation. The dedicated instructors and team tirelessly mold students' destinies.”",
   },
   {
     id: 4,
-    author: "David Brown",
-    position: "Software Engineer, ABC Corporation",
-    text: "I highly recommend Educrat for anyone looking to upskill or learn new technologies. The platform is user-friendly, and the instructors are knowledgeable.",
+    author: "Swathi",
+    position: "ASE",
+    text: "Best Instructors SEOAK! Has exceeded my expectations in terms of professional development, the hands on approach to learning coupled with industry relevant curriculum has prepared me for real world challenges and boosted my confidence.",
+    companySrc: "/assets/img/Alumni-Comany-Logos/9.png",
   },
   {
     id: 5,
-    author: "Sarah Thompson",
-    position: "Digital Marketing Specialist",
-    text: "Educrat has been a game-changer for me. The courses are up-to-date and relevant, helping me stay ahead in the ever-changing field of digital marketing.",
+    author: "Hema",
+    position: "ASE",
+    text: "Best Platform to learn “Joining SEOAK is an honor, offering abundant chances for personal development and evoking deep appreciation. The dedicated instructors and team tirelessly mold students' destinies.”",
+    companySrc: "/assets/img/Alumni-Comany-Logos/9.png",
   },
   // Add more testimonial objects as needed
 ];
 
 export const paginationImages = [
-  "/assets/img/home-3/testimonials/1.png",
-  "/assets/img/home-3/testimonials/2.png",
-  "/assets/img/home-3/testimonials/3.png",
-  "/assets/img/home-3/testimonials/4.png",
-  "/assets/img/home-3/testimonials/5.png",
+  "/assets/img/student-review-images/Hema.jpeg",
+  "/assets/img/student-review-images/Likith Sai.jpeg",
+  "/assets/img/student-review-images/Rushika.jpeg",
+  "/assets/img/student-review-images/Sai.jpeg",
+  "/assets/img/student-review-images/Swathi.jpeg",
 ];
 
 export const testimonialsTwoFour = [

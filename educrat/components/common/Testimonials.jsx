@@ -45,11 +45,9 @@ export default function Testimonials({ backgroundComponent }) {
         <div className="row y-gap-20 justify-center text-center">
           <div className="col-auto">
             <div className="sectionTitle ">
-              <h2 className="sectionTitle__title ">Creating Impact with</h2>
-
-              <p className="sectionTitle__text ">
-              2000+ Tech Professionals & counting...
-              </p>
+              <span className="sectionTitle__title mr-10 text-black fw-400" style={{fontSize: "xxx-large;", fontFamily: "'Poppins', sans-serif"}}>
+              <span className="about-content__title" style={{fontSize: "xxx-large;"}}>Creating Impact with</span> 2000+ Tech Professionals & counting...
+              </span>
             </div>
           </div>
         </div>
@@ -79,22 +77,23 @@ export default function Testimonials({ backgroundComponent }) {
                           data-aos="fade-up"
                           data-aos-duration={600}
                         >
-                          <div className="testimonials__icon">
-                            <Image
-                              width={60}
-                              height={43}
-                              src="/assets/img/misc/quote.svg"
-                              alt="quote"
-                            />
-                          </div>
-                          <div className="testimonials__text md:text-20 fw-500 text-dark-1">
+
+                          <div className="testimonials__text md:text-20 fw-500 text-black">
                             {elm.text}
                           </div>
                           <div className="testimonials__author">
-                            <h5 className="text-17 lh-15 fw-500">
+                            <h5 className="text-17 lh-15 fw-500 text-black">
                               {elm.author}
                             </h5>
-                            <div className="mt-5">{elm.position}</div>
+                            <div className="testimonials__icon text-center" >
+                              <Image
+                                width={60}
+                                height={43}
+                                src={elm.companySrc}
+                                style={{display: elm.companySrc ? '' : 'none'}}
+                              />
+                            </div>
+                            <div className="mt-5 text-black">{elm.position}</div>
                           </div>
                         </div>
                       </div>
@@ -114,9 +113,17 @@ export default function Testimonials({ backgroundComponent }) {
                       <div
                         className={`pagination__item ${
                           currentSlideIndex == i ? "is-active" : ""
-                        }`}
+                        }`}  
                       >
-                        <Image width={70} height={70} src={elm} alt="image" />
+                        <Image width={70} height={70} src={elm} alt="image" style={{
+                          width: '70px',
+                          height: '70px',
+                          borderRadius: '50%',
+                          overflow: 'hidden',
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                        }}/>
                       </div>
                     </div>
                   ))}
