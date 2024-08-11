@@ -9,6 +9,8 @@ import Alumni from "../components/common/Alumni";
 import Categories from "../components/homes/categories/Categories";
 import Courses from "../components/homes/courses/FeaturedCourses";
 import EventsOne from '../components/homes/events/EventsOne';
+import EventsEight from '../components/homes/events/EventsEight';
+
 // import TestimonialsOne from "../components/common/Testimonials";
 import TestimonialsOne from "../components/common/Testimonials";
 import Pricing from '../components/homes/pricing/Pricing'
@@ -48,14 +50,16 @@ export default function HomePage() {
       <Pricing/>
       <Alumni/>
       <PricingCommon/>
-      {/* <TestimonialsOne/>
-      <LearningPath/> */}
+      {/* <TestimonialsOne/> */}
+      <LearningPath/>
+      <EventsEight/>
       {/* <FeaturesOne/>
       <WhyCourse/>
       // <Instructors/>
       <GetApp/>
       <Blog/>
       <Join/> */}
+      {/* <Blog/> */}
       <FooterOne/>
       
       
