@@ -5,17 +5,28 @@ import  Header  from "../components/layout/headers/HeaderThree";
 import HomeHero from "../components/homes/heros/HomeHero";
 
 import Brands from "../components/common/Brands";
+import Alumni from "../components/common/Alumni";
 import Categories from "../components/homes/categories/Categories";
-import Courses from "../components/homes/courses/Courses";
-import TestimonialsOne from "../components/common/TestimonialsOne";
+import Courses from "../components/homes/courses/FeaturedCourses";
+import EventsOne from '../components/homes/events/EventsOne';
+import EventsEight from '../components/homes/events/EventsEight';
+
+// import TestimonialsOne from "../components/common/Testimonials";
+import TestimonialsOne from "../components/common/Testimonials";
+import Pricing from '../components/homes/pricing/Pricing'
+import PricingCommon from '../components/common/Pricing'
+import InstractorsEight from '@/components/homes/instractors/InstractorsEight'
+import EventsSeven from '@/components/homes/events/EventsSeven'
+
 import FeaturesOne from "../components/homes/features/FeaturesOne";
 import WhyCourse from "../components/homes/WhyCourse";
 import Instructors from "../components/common/Instructors";
 import GetApp from "../components/homes/getApp/GetApp";
-import Blog from "../components/homes/blogs/Blog";
+import Blog from "../components/homes/blogs/BlogsTwo";
 import Join from "../components/homes/join/Join";
 import FooterOne from "../components/layout/footers/FooterOne";
 import Preloader from "@/components/common/Preloader";
+import LearningPath from "@/components/homes/LearningPath/LearningPath";
 
 export const metadata = {
   title: 'SEOAK',
@@ -35,15 +46,24 @@ export default function HomePage() {
     
       <HomeHero />
       <Brands/>
-      <Categories />
-      <Courses/>
+      {/* <Categories /> */}
+      
+      <EventsOne/>
+      <Pricing/>
+      <Alumni/>
+      <PricingCommon/>
       <TestimonialsOne/>
-      <FeaturesOne/>
+      <LearningPath/>
+      <InstractorsEight/>
+      <EventsSeven />
+      <EventsEight/>
+      {/* <FeaturesOne/>
       <WhyCourse/>
-      <Instructors/>
+      // <Instructors/>
       <GetApp/>
       <Blog/>
-      <Join/>
+      <Join/> */}
+      {/* <Blog/> */}
       <FooterOne/>
       
       

@@ -776,12 +776,13 @@ export const featuredTracher = {
 export const instractorsEight = [
   {
     id: 46,
-    image: "/assets/img/speakers/1.png",
+    image: "/assets/img/mentors-photos/1.png",
+    company_image: "/assets/img/mentors-company-logos/1.png",
     category:'Illustration',
     rating: 4,
     reviews: 3545,
-    name: "Jerome Bell",
-    role: "Marketing Coordinator",
+    name: "ABHISHEK CHAUHAN",
+    role: "SOFTWARE ENGINEER",
     students: 692,
     courses: 15,
     socialProfile: [
@@ -805,12 +806,13 @@ export const instractorsEight = [
   },
   {
     id: 47,
-    image: "/assets/img/speakers/2.png",
+    image: "/assets/img/mentors-photos/2.png",
+    company_image: "/assets/img/mentors-company-logos/2.png",
     category:'Illustration',
     rating: 4.5,
     reviews: 3545,
-    name: "Bessie Cooper",
-    role: "President of Sales",
+    name: "GAURAV KUMAR JAIN",
+    role: "SOFTWARE ENGINEER",
     students: 692,
     courses: 15,
     socialProfile: [
@@ -834,12 +836,103 @@ export const instractorsEight = [
   },
   {
     id: 48,
-    image: "/assets/img/speakers/3.png",
+    image: "/assets/img/mentors-photos/3.png",
+    company_image: "",
     category:'Animation',
     rating: 3,
     reviews: 3545,
-    name: "Kristin Watson",
-    role: "Nursing Assistant",
+    name: "PAVAN KUMAR",
+    role: "SOFTWARE ENGINEER",
+    students: 692,
+    courses: 15,
+    socialProfile: [
+      {
+        icon: "icon-facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        icon: "icon-twitter",
+        url: "https://twitter.com/?lang=en",
+      },
+      {
+        icon: "icon-instagram",
+        url: "https://www.instagram.com/",
+      },
+      {
+        icon: "icon-linkedin",
+        url: "https://www.linkedin.com/",
+      },
+    ],
+  }, 
+  {
+    id: 63,
+    image: "/assets/img/mentors-photos/4.png",
+    company_image: "/assets/img/mentors-company-logos/3.png",
+    category:'Illustration',
+    rating: 4,
+    reviews: 3545,
+    name: "HEMANT VASWANI",
+    role: "SR. SOFTWARE DEVELOPER",
+    students: 692,
+    courses: 15,
+    socialProfile: [
+      {
+        icon: "icon-facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        icon: "icon-twitter",
+        url: "https://twitter.com/?lang=en",
+      },
+      {
+        icon: "icon-instagram",
+        url: "https://www.instagram.com/",
+      },
+      {
+        icon: "icon-linkedin",
+        url: "https://www.linkedin.com/",
+      },
+    ],
+  },
+  {
+    id: 64,
+    image: "/assets/img/mentors-photos/5.png",
+    company_image: "/assets/img/mentors-company-logos/4.png",
+    category:'Illustration',
+    rating: 4.5,
+    reviews: 3545,
+    name: "DEBOBRATA DEY",
+    role: "SOFTWARE DEVELOPER",
+    students: 692,
+    courses: 15,
+    socialProfile: [
+      {
+        icon: "icon-facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        icon: "icon-twitter",
+        url: "https://twitter.com/?lang=en",
+      },
+      {
+        icon: "icon-instagram",
+        url: "https://www.instagram.com/",
+      },
+      {
+        icon: "icon-linkedin",
+        url: "https://www.linkedin.com/",
+      },
+    ],
+  },
+  {
+    id: 65,
+    image: "/assets/img/mentors-photos/6.png",
+    company_image: "",
+    category:'Animation',
+    rating: 3,
+    reviews: 3545,
+    name: "NIDHI CHAUHAN",
+    role: "",
     students: 692,
     courses: 15,
     socialProfile: [
